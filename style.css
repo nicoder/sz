@@ -1,0 +1,36 @@
+:root {
+  --yellow: rgb(247, 243, 7);
+  --grey: rgba(212, 215, 219, 0.7);
+}
+body {
+  background-image: url(mountains.jpg);
+  background-size: cover;
+  color: black;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+h1 {
+  color: var(--yellow);
+}
+table {
+  background-color: var(--grey);
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: 2px solid var(--yellow);
+}
+
+th,
+td {
+  padding: 2px 5px;
+}
+
+tr,
+th,
+td {
+  border: 1px solid var(--yellow);
+}
+
+footer {
+  margin-top: 10px;
+  color: var(--grey);
+}

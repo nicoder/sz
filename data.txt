@@ -1,0 +1,79 @@
+2003
+https://services.datasport.com/2003/lauf/zinal/rang006.htm
+---  DERMINE MARTIN         81 F-FONTAINEBLEAU        5:24.03,9    (6852)
+---  DERMINE NICOLAS        80 F-FONTAINEBLEAU        5:19.53,8    (6851)
+
+2004
+https://services.datasport.com/2004/lauf/zinal/rang006.htm
+  ---  DERMINE ALEXANDRE      85 F-FONTAINEBLEAU        4:47.38,8   (5397)
+  ---  DERMINE ISABELLE       53 F-FONTAINEBLEAU        8:59.25,1   (5398)
+  ---  DERMINE JEAN           53 F-FONTAINEBLEAU        6:36.03,2   (5399)
+
+2005
+https://services.datasport.com/2005/lauf/zinal/rang006.htm
+  ---  DERMINE ALEXANDRE      85 F-FONTAINEBLEAU        4:54.20,8   (5312)
+  ---  DERMINE AUGUSTIN       87 F-FONTAINEBLEAU        4:23.26,3   (5313)
+  ---  DERMINE ISABELLE       53 F-FONTAINEBLEAU        7:52.18,6   (5314)
+  ---  DERMINE JEAN           53 F-FONTAINEBLEAU        6:17.23,1   (5315)
+  ---  DERMINE MARTIN         81 F-FONTAINEBLEAU        4:20.43,9   (5316)
+  ---  DERMINE NICOLAS        80 F-FONTAINEBLEAU        4:26.13,8   (5317)
+
+2007
+https://services.datasport.com/2007/lauf/zinal/rang021.htm
+  rang Name und Vorname       Jg   Land/Ort                   temps      retard    doss   ¦    -Chandolin ¦   -Weisshorn ¦       -Zinal ¦
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---  DERMINE ALEXANDRE      1985 B-BRUXELLES            4:40.27,1   1:14.44,7  (5393)   ¦  2:15.01  ----¦ 1:07.59  ----¦ 1:17.26  ----¦
+                                                                                          ¦               ¦ 3:23.00  ----¦ 4:40.27  ----¦
+  ---  DERMINE AUGUSTIN       1987 B-NAMUR                4:32.30,1   1:06.47,7  (5394)   ¦  2:04.11  ----¦ 1:07.27  ----¦ 1:20.51  ----¦
+                                                                                          ¦               ¦ 3:11.39  ----¦ 4:32.30  ----¦
+  ---  DERMINE JEAN           1953 F-FONTAINEBLEAU        7:04.53,4   3:39.11,0  (5395)   ¦  3:13.21  ----¦ 1:41.36  ----¦ 2:09.55  ----¦
+                                                                                          ¦               ¦ 4:54.57  ----¦ 7:04.53  ----¦
+  ---  DERMINE MARTIN         1981 B-BRUXELLES            4:24.24,9     58.42,5  (5396)   ¦  2:01.03  ----¦ 1:02.30  ----¦ 1:20.51  ----¦
+                                                                                          ¦               ¦ 3:03.33  ----¦ 4:24.24  ----¦
+  ---  DERMINE NICOLAS        1980 GENEVE                 4:54.33,4   1:28.51,0  (5397)   ¦  2:15.02  ----¦ 1:11.12  ----¦ 1:28.18  ----¦
+                                                                                          ¦               ¦ 3:26.14  ----¦ 4:54.33  ----¦
+2008
+https://services.datasport.com/2008/lauf/zinal/rang021.htm
+  ---  DERMINE AUGUSTIN       1987 F-FONTAINEBLEAU        4:17.51,4   1:04.47,9  (6654)   ¦  1:58.50  ----¦ 1:02.42  ----¦ 1:16.18  ----¦
+                                                                                          ¦               ¦ 3:01.33  ----¦ 4:17.51  ----¦
+  ---  DERMINE MARTIN         1981 B-BRUXELLES            4:16.41,9   1:03.38,4  (5287)   ¦  1:54.57  ----¦ 1:01.12  ----¦ 1:20.32  ----¦
+                                                                                          ¦               ¦ 2:56.09  ----¦ 4:16.41  ----¦
+2013
+https://services.datasport.com/2013/lauf/zinal/rang021.htm
+  rang Name und Vorname       Jg   Land/Ort                   temps      retard     doss   moyenne ¦    -Chandolin ¦   -Weisshorn ¦       -Zinal ¦
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---  Dermine Alexandre      1985 B-Woluwe-Saint-Lambe   4:40.49,2       -----   (5552)      9.03 ¦  2:10.26  ----¦ 1:07.16  ----¦ 1:23.06  ----¦
+                                                                                                   ¦               ¦ 3:17.42  ----¦ 4:40.49  ----¦
+  ---  Dermine Augustin       1987 B-Kraainem             4:40.30,8       -----   (5553)      9.02 ¦  2:05.40  ----¦ 1:12.02  ----¦ 1:22.47  ----¦
+                                                                                                   ¦               ¦ 3:17.43  ----¦ 4:40.30  ----¦
+  ---  Dermine Isabelle       1953 F-Fontainebleau        8:04.14,4       -----   (5554)     15.37 ¦  3:38.20  ----¦ 1:52.06  ----¦ 2:33.47  ----¦
+                                                                                                   ¦               ¦ 5:30.26  ----¦ 8:04.14  ----¦
+  ---  Dermine Jean           1953 F-Fontainebleau        7:18.35,7       -----   (5555)     14.08 ¦  3:21.46  ----¦ 1:45.04  ----¦ 2:11.45  ----¦
+                                                                                                   ¦               ¦ 5:06.50  ----¦ 7:18.35  ----¦
+  ---  Dermine Juliette       1992 F-Fontainebleau        6:49.07,2       -----   (5556)     13.11 ¦  3:06.42  ----¦ 1:38.39  ----¦ 2:03.45  ----¦
+                                                                                                   ¦               ¦ 4:45.21  ----¦ 6:49.07  ----¦
+  ---  Dermine Martin         1981 B-Bruxelles            4:11.00,3       -----   (5557)      8.05 ¦  2:00.06  ----¦   59.06  ----¦ 1:11.47  ----¦
+                                                                                                   ¦               ¦ 2:59.12  ----¦ 4:11.00  ----¦
+  ---  Dermine Nicolas        1980 PL-Nysa                5:04.13,0       -----   (5558)      9.48 ¦  2:17.16  ----¦ 1:13.56  ----¦ 1:33.00  ----¦
+                                                                                                   ¦               ¦ 3:31.12  ----¦ 5:04.13  ----¦
+
+2016
+https://services.datasport.com/2016/lauf/zinal/rang021.htm
+  rang Name und Vorname       Jg   Land/Ort                   temps      retard     doss   moyenne ¦    -Ponchette ¦   -Chandolin ¦   -Weisshorn ¦       -Zinal ¦
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  ---  Dermine Isabelle       1953 F-Fontainebleau        8:24.49,9       -----   (1188)     16.17 ¦  2:33.10  ----¦ 1:04.01  ----¦ 2:00.42  ----¦ 2:46.55  ----¦
+                                                                                                   ¦               ¦ 3:37.11  ----¦ 5:37.54  ----¦ 8:24.49  ----¦
+https://services.datasport.com/2016/lauf/zinal/rang091.htm
+ rang Name und Vorname       Jg   Land/Ort                   temps      retard     doss  cat/rang       moyenne ¦    -Ponchette ¦   -Chandolin ¦   -Weisshorn ¦       -Zinal ¦
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  799. Dermine Augustin       1987 B-Bouge                4:50.56,7   2:17.19,1   (5389)  Femm_II  7.       9.23 ¦  1:32.50  802.¦   34.59  957.¦ 1:17.47  941.¦ 1:25.19  680.¦
+                                                                                                                 ¦               ¦ 2:07.50  843.¦ 3:25.37  876.¦ 4:50.56  799.¦
+  DNF  Dermine Jean           1953 F-Fontainebleau        2:24.54,0   Ponchette   (5390)  Vét_III           ---- ¦  2:24.54 1301.¦    ----  ----¦    ----  ----¦    ----  ----¦
+                                                                                                                 ¦               ¦    ----  ----¦    ----  ----¦    ----  ----¦
+
+2017
+https://services.datasport.com/2017/lauf/zinal/rang091.htm
+  rang Name und Vorname       Jg   Land/Ort                   temps      retard     doss  cat/rang       moyenne ¦    -Ponchette ¦   -Chandolin ¦   -Weisshorn ¦       -Zinal ¦
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  506. Dermine Nicolas        1980 PL-Nysa                4:17.30,4   1:44.24,7   (5363)  ElitesHo 312.     8.18 ¦  1:21.22  464.¦   27.38  330.¦ 1:04.04  516.¦ 1:24.25  678.¦
+                                                                                                                 ¦               ¦ 1:49.00  432.¦ 2:53.05  459.¦ 4:17.30  506.¦

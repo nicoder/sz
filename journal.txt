@@ -1,0 +1,59 @@
+20180303samedi
+    06h52 commence à récupérer les données, les notes, avec les sources dans un fichier data.txt
+    06h52 idées de faire une page web qui liste les résultats de la famille à Sierre-Zinal
+    06h52 commence par juste une liste, on verra après si il y a des trucs intéressants à rajouter
+    06h52 comme des graphiques, du tri, des filtres, etc.
+    06h59 pourrais chercher les résultats sur la course pour les jeunes aussi
+    07h10 du coup apparemment on a participé à 8 courses en 15 ans
+    07h11 du coup les données qu'on peut afficher dans la liste :
+- nom
+- année de la course
+- âge au moment de la course ?
+- touriste ou coureur
+- temps total
+- vitesse moyenne
+- temps jusque Ponchette (if available)
+- temps Ponchette-Chandolin (if available)
+- temps jusque Chandolin (if available)
+- temps Chandolin-Weisshorn (if available)
+- temps jusque Weisshorn (if available)
+- temps Weisshorn-Zinal (if available)
+    07h15 du coup next : mettre ces données dans un tableau d'objets JavaScript
+    07h15 puis regarderai comment afficher la liste dans une page web.
+    07h16 du coup pour l'âge je peux stocker les dates de naissance dans un autre objet peut-être, et faire le calcul à la volée
+    07h17 personne n'a son anniversaire dans les 2 premières semaines d'aout donc pas besoin de stocker la date de la course.
+    07h19 12 colonnes de données c'est un peu beaucoup
+    07h22 et si veux pouvoir ordonner il faudra convertir les minutes en heures décimales, mais on verra après
+    07h36 pourrai marquer en bold les records pour chaque donnée (plus jeune, plus âgé, plus rapide / plus lent sur les différents temps)
+    07h56 ok, ai mes données, fichier data.js fait 215 lignes.
+    07h56 devrai encore calculer l'âge à la volée
+    07h56 mais déjà peux essayer d'afficher ça dans un simple tableau dans une page.
+    09h31 next : calculate average speed if not available
+    10h14 ok, calculé en km/h, mais le site done en min/km, avec nombre de secondes, pas décimale
+    10h48 ok, ai exactement le même résultat que ceux donnés par les stats.
+    10h50 next display age ?
+    10h50 ou plus intéressant d'abord de pouvoir ordonner par une colonne déjà. puis deux serait pas mal.
+    10h51 par défaut : Année + Prénom
+    10h52 donc ça introduit du state : le sort
+    11h01 ai une listbox, par défaut sur Année. redessine si on la change (normalement). next : prendre en compte le tri dans la liste. Puis ajouter un 2e select, ce serait pas mal.
+    12h23 aimerais mettre les - à la fin
+    12h28 ah si trie par vitesse moyenne pas bon, 1. ordonne des strings, donc 13 est avant 8, et 2. pas encore calculé les valeurs manquantes donc une partie triée puis une partie pas.
+    12h29 du coup il faut que je sache que pour certaines colonnes je dois convertir en numérique pour trier
+    12h29 et dois calculer les vitesses avant de filtrer
+    12h39 ok, changé pour que les valeurs soient calculées avant. next : calculer p-e les sortValues pour les colonnes qui auront un flag disant qu'il faut traduire un temps en décimal. sachant que la vitesse ce sera un peu différent, mais en fait la vitesse c'est le contraire du temps total, donc à voir comment on veut implémenter ça.
+    17h40 donc faire en sorte que l'order by prenne des chiffres et pas strings pour certaines colonnes.
+    17h42 en fait tout sauf nom, année et catégorie est un temps et peut être converti en heures décimales pour être trié
+    17h49 ok, cool. next : order by une 2e donnée ?
+    17h49 parce qu'au départ pensait ordonner par Année et Nom
+    18h02 ok, a l'air de marcher.
+    18h03 ok, encore un tout petit peu de style, au moins montrer les lignes du tableau.
+    18h59 ok. vais laisser comme ça pour le moment et envoyer.
+    18h59 noté "Crédit photo: Christophe Golay" dans le footer, pris la photo ici : https://www.flickr.com/photos/147267175@N03/36267743743/in/album-72157685731127341/
+
+TODO :
+- display age
+- chacun pourrait proposer un petit récit de ses courses, si s'en souvient, et on pourrait le lire sur la page.
+- filter (simple listbox pour le moment) on runner, year
+- highlight max and min for every data column (or just max). et pourrait être par personne (juste pour le temps total, p-e)
+- 'freeze' headers ou pas toute suite, tient sur mon écran en tout cas.
+- améliorer le style
