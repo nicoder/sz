@@ -49,6 +49,12 @@
     18h03 ok, encore un tout petit peu de style, au moins montrer les lignes du tableau.
     18h59 ok. vais laisser comme ça pour le moment et envoyer.
     18h59 noté "Crédit photo: Christophe Golay" dans le footer, pris la photo ici : https://www.flickr.com/photos/147267175@N03/36267743743/in/album-72157685731127341/
+    19h15 mis sur github pages, fun : https://nicoder.github.io/sz/
+    19h15 serais encore bien de mettre un lien vers les sources.
+    19h15 pourrais presque me baser sur l'année, mais pas tout à fait, dépend de la catégorie, en 2016 juste pour le moment.
+    19h16 peux stocker ça sur un objet sources avec deux properties Touriste/Coureur, puis par année.
+    19h16 et du coup mets un lien sur l'année, sur chaque ligne. comme ça chacun peut vérifier.
+    19h35 ok, pousse ça et annonce cette première version
 
 TODO :
 - display age

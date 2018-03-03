@@ -100,8 +100,16 @@ const getTableCell = (column, result) => {
 };
 
 const getTableCellValue = (column, result) => {
+  let prefix = '';
+  let suffix = '';
+  if (column.key === 'year') {
+    prefix = `<a href="${
+      sources[result.category][result.year]
+    }" target="_blank">`;
+    suffix = '</a>';
+  }
   const value = result[column.key];
-  return value || '-';
+  return prefix + (value || '-') + suffix;
 };
 
 const round = number => Math.round(number * 100, 2) / 100;

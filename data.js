@@ -262,3 +262,19 @@ const results = [
     timeFromWeisshornToZinal: '1:24.25',
   },
 ];
+
+sources = {
+  Touriste: {
+      2003: 'https://services.datasport.com/2003/lauf/zinal/rang006.htm',
+      2004: 'https://services.datasport.com/2004/lauf/zinal/rang006.htm',
+      2005: 'https://services.datasport.com/2005/lauf/zinal/rang006.htm',
+      2007: 'https://services.datasport.com/2007/lauf/zinal/rang021.htm',
+      2008: 'https://services.datasport.com/2008/lauf/zinal/rang021.htm',
+      2013: 'https://services.datasport.com/2013/lauf/zinal/rang021.htm',
+      2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
+  },
+  Coureur: {
+      2016: 'https://services.datasport.com/2016/lauf/zinal/rang091.htm',
+      2017: 'https://services.datasport.com/2017/lauf/zinal/rang091.htm',
+  },
+};
