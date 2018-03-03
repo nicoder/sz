@@ -2,15 +2,23 @@
   --yellow: rgb(247, 243, 7);
   --grey: rgba(212, 215, 219, 0.7);
 }
+
 body {
+  padding: 5px;
   background-image: url(mountains.jpg);
   background-size: cover;
   color: black;
   font-family: 'helvetica neue', helvetica, arial, sans-serif;
 }
+
 h1 {
   color: var(--yellow);
 }
+
+div {
+  margin-bottom: 10px;
+}
+
 table {
   background-color: var(--grey);
   table-layout: fixed;
