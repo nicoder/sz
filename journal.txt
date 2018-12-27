@@ -56,6 +56,10 @@
     19h16 et du coup mets un lien sur l'année, sur chaque ligne. comme ça chacun peut vérifier.
     19h35 ok, pousse ça et annonce cette première version
 
+1227jeudi
+    17h17 ajoute les résultats de 2018
+    17h48 done.
+
 TODO :
 - display age
 - chacun pourrait proposer un petit récit de ses courses, si s'en souvient, et on pourrait le lire sur la page.
