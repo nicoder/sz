@@ -352,6 +352,19 @@ const results = [
     timeToWeisshorn: '2:54.21',
     timeFromWeisshornToZinal: '1:14.15',
   },
+  {
+    name: 'Augustin',
+    year: 2019,
+    category: 'Touriste',
+    totalTime: '4:58.20,9',
+    averageSpeed: '9.37',
+    timeToPonchette: '1:34.47',
+    timeFromPonchetteToChandolin: '37.15',
+    timeToChandolin: '2:12.02',
+    timeFromChandolinToWeisshorn: '1:18.23',
+    timeToWeisshorn: '3:30.26',
+    timeFromWeisshornToZinal: '1:27.54',
+  },
 ];
 
 sources = {
@@ -364,6 +377,7 @@ sources = {
       2013: 'https://services.datasport.com/2013/lauf/zinal/rang021.htm',
       2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
       2018: 'https://services.datasport.com/2018/lauf/zinal/rang021.htm',
+      2019: 'https://services.datasport.com/2019/lauf/zinal/rang021.htm',
   },
   Coureur: {
       2016: 'https://services.datasport.com/2016/lauf/zinal/rang091.htm',
