@@ -2,7 +2,7 @@ const birthdates = {
   Maman: '1953-01-24',
   Papa: '1953-08-27',
   Nicolas: '1980-06-30',
-  Martin: '1981-12-04',
+  'Martin D.': '1981-12-04',
   Alexandre: '1985-07-01',
   Augustin: '1987-04-15',
   Juliette: '1992-09-26',
@@ -58,7 +58,7 @@ const tableColumns = [
 ];
 
 const results = [
-  {name: 'Martin', year: 2003, category: 'Touriste', totalTime: '5:24.03,9'},
+  {name: 'Martin D.', year: 2003, category: 'Touriste', totalTime: '5:24.03,9'},
   {name: 'Nicolas', year: 2003, category: 'Touriste', totalTime: '5:19.53,8'},
   {name: 'Alexandre', year: 2004, category: 'Touriste', totalTime: '4:47.38,8'},
   {name: 'Maman', year: 2004, category: 'Touriste', totalTime: '8:59.25,1'},
@@ -67,7 +67,7 @@ const results = [
   {name: 'Augustin', year: 2005, category: 'Touriste', totalTime: '4:23.26,3'},
   {name: 'Maman', year: 2005, category: 'Touriste', totalTime: '7:52.18,6'},
   {name: 'Papa', year: 2005, category: 'Touriste', totalTime: '6:17.23,1'},
-  {name: 'Martin', year: 2005, category: 'Touriste', totalTime: '4:20.43,9'},
+  {name: 'Martin D.', year: 2005, category: 'Touriste', totalTime: '4:20.43,9'},
   {name: 'Nicolas', year: 2005, category: 'Touriste', totalTime: '4:26.13,8'},
   {
     name: 'Alexandre',
@@ -100,7 +100,7 @@ const results = [
     timeFromWeisshornToZinal: '2:09.55',
   },
   {
-    name: 'Martin',
+    name: 'Martin D.',
     year: 2007,
     category: 'Touriste',
     totalTime: '4:24.24,9',
@@ -130,7 +130,7 @@ const results = [
     timeFromWeisshornToZinal: '1:16.18',
   },
   {
-    name: 'Martin',
+    name: 'Martin D.',
     year: 2008,
     category: 'Touriste',
     totalTime: '4:16.41,9',
@@ -195,7 +195,7 @@ const results = [
     timeFromWeisshornToZinal: '2:03.45',
   },
   {
-    name: 'Martin',
+    name: 'Martin D.',
     year: 2013,
     category: 'Touriste',
     totalTime: '4:11.00,3',
@@ -327,7 +327,7 @@ const results = [
     timeFromWeisshornToZinal: '1:44.03',
   },
   {
-    name: 'Martin',
+    name: 'Martin D.',
     year: 2018,
     category: 'Touriste',
     totalTime: '4:07.26,4',
