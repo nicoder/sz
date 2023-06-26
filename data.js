@@ -365,6 +365,19 @@ const results = [
     timeToWeisshorn: '3:30.26',
     timeFromWeisshornToZinal: '1:27.54',
   },
+  {
+    name: 'Martin D.',
+    year: 2021,
+    category: 'Touriste (St Antoine)',
+    totalTime: '3:54.49,0',
+    averageSpeed: '',
+    timeToPonchette: '',
+    timeFromPonchetteToChandolin: '',
+    timeToChandolin: '',
+    timeFromChandolinToWeisshorn: '',
+    timeToWeisshorn: '',
+    timeFromWeisshornToZinal: '',
+  },
 ];
 
 sources = {
@@ -378,6 +391,9 @@ sources = {
       2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
       2018: 'https://services.datasport.com/2018/lauf/zinal/rang021.htm',
       2019: 'https://services.datasport.com/2019/lauf/zinal/rang021.htm',
+  },
+  'Touriste (St Antoine)': {
+      2021: 'https://www.datasport.com/live/ranking?racenr=23138&q=Dermine',
   },
   Coureur: {
       2016: 'https://services.datasport.com/2016/lauf/zinal/rang091.htm',
