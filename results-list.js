@@ -52,7 +52,11 @@ const getResultsTable = () => {
 };
 
 const getTableHeaders = () => {
-  return '<tr>' + tableColumns.map(buildTableHeader).join('') + '</tr>';
+  return (
+    '<thead><tr>' +
+    tableColumns.map(buildTableHeader).join('') +
+    '</tr></thead>'
+  );
 };
 
 const buildTableHeader = column =>
