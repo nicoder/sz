@@ -9,7 +9,7 @@ const init = () => {
 const computeMissingSpeed = () => {
   results.forEach(result => {
     if (!result.averageSpeed) {
-      result.averageSpeed = calculateSpeed(result.totalTime);
+      result.averageSpeed = calculateSpeed(result.timeToZinal);
     }
   });
 };
