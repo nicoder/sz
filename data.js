@@ -380,7 +380,7 @@ const results = [
   },
 ];
 
-sources = {
+const sources = {
   Touriste: {
       2003: 'https://services.datasport.com/2003/lauf/zinal/rang006.htm',
       2004: 'https://services.datasport.com/2004/lauf/zinal/rang006.htm',
