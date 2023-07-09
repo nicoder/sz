@@ -23,7 +23,7 @@ div {
 table {
   background-color: var(--grey);
   table-layout: fixed;
-  width: 100%;
+  min-width: 100%;
   border-collapse: collapse;
   border: 2px solid var(--yellow);
 }
