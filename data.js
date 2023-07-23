@@ -502,6 +502,7 @@ const sources = {
     2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
     2018: 'https://services.datasport.com/2018/lauf/zinal/rang021.htm',
     2019: 'https://services.datasport.com/2019/lauf/zinal/rang021.htm',
+    2022: 'https://www.datasport.com/live/ranking/?racenr=24138&kat=21',
   },
   'Touriste (St Antoine)': {
     2021: 'https://www.datasport.com/live/ranking?racenr=23138&q=Dermine',
