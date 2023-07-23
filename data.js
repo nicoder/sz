@@ -8,6 +8,15 @@ const birthdates = {
   Juliette: '1992-09-26',
 };
 
+const aidStations = [
+  'Ponchette',
+  'Chandolin',
+  'Tignousa',
+  'Weisshorn',
+  'Barneuza',
+  'Zinal',
+];
+
 const tableColumns = [
   {
     title: 'Participant(e)',
@@ -30,22 +39,43 @@ const tableColumns = [
   {
     title: 'Ponchette - Chandolin',
     key: 'timeFromPonchetteToChandolin',
+    displayHeader: false,
   },
   {
     title: 'Chandolin',
     key: 'timeToChandolin',
   },
   {
-    title: 'Chandolin - Weisshorn',
-    key: 'timeFromChandolinToWeisshorn',
+    title: 'Chandolin - Tignousa',
+    key: 'timeFromChandolinToTignousa',
+    displayHeader: false,
+  },
+  {
+    title: 'Tignousa',
+    key: 'timeToTignousa',
+  },
+  {
+    title: 'Tignousa - Weisshorn',
+    key: 'timeFromTignousaToWeisshorn',
+    displayHeader: false,
   },
   {
     title: 'Weisshorn',
     key: 'timeToWeisshorn',
   },
   {
-    title: 'Weisshorn - Zinal',
-    key: 'timeFromWeisshornToZinal',
+    title: 'Weisshorn - Barneuza',
+    key: 'timeFromWeisshornToBarneuza',
+    displayHeader: false,
+  },
+  {
+    title: 'Barneuza',
+    key: 'timeToBarneuza',
+  },
+  {
+    title: 'Barneuza - Zinal',
+    key: 'timeFromBarneuzaToZinal',
+    displayHeader: false,
   },
   {
     title: 'Zinal',
@@ -58,16 +88,41 @@ const tableColumns = [
 ];
 
 const results = [
-  {name: 'Martin D.', year: 2003, category: 'Touriste', timeToZinal: '5:24.03,9'},
+  {
+    name: 'Martin D.',
+    year: 2003,
+    category: 'Touriste',
+    timeToZinal: '5:24.03,9',
+  },
   {name: 'Nicolas', year: 2003, category: 'Touriste', timeToZinal: '5:19.53,8'},
-  {name: 'Alexandre', year: 2004, category: 'Touriste', timeToZinal: '4:47.38,8'},
+  {
+    name: 'Alexandre',
+    year: 2004,
+    category: 'Touriste',
+    timeToZinal: '4:47.38,8',
+  },
   {name: 'Maman', year: 2004, category: 'Touriste', timeToZinal: '8:59.25,1'},
   {name: 'Papa', year: 2004, category: 'Touriste', timeToZinal: '6:36.03,2'},
-  {name: 'Alexandre', year: 2005, category: 'Touriste', timeToZinal: '4:54.20,8'},
-  {name: 'Augustin', year: 2005, category: 'Touriste', timeToZinal: '4:23.26,3'},
+  {
+    name: 'Alexandre',
+    year: 2005,
+    category: 'Touriste',
+    timeToZinal: '4:54.20,8',
+  },
+  {
+    name: 'Augustin',
+    year: 2005,
+    category: 'Touriste',
+    timeToZinal: '4:23.26,3',
+  },
   {name: 'Maman', year: 2005, category: 'Touriste', timeToZinal: '7:52.18,6'},
   {name: 'Papa', year: 2005, category: 'Touriste', timeToZinal: '6:17.23,1'},
-  {name: 'Martin D.', year: 2005, category: 'Touriste', timeToZinal: '4:20.43,9'},
+  {
+    name: 'Martin D.',
+    year: 2005,
+    category: 'Touriste',
+    timeToZinal: '4:20.43,9',
+  },
   {name: 'Nicolas', year: 2005, category: 'Touriste', timeToZinal: '4:26.13,8'},
   {
     name: 'Alexandre',
@@ -371,32 +426,88 @@ const results = [
     category: 'Touriste (St Antoine)',
     timeToZinal: '3:54.49,0',
     averageSpeed: '',
-    timeToPonchette: '',
-    timeFromPonchetteToChandolin: '',
+  },
+  {
+    name: 'Alexandre',
+    year: 2022,
+    category: 'Touriste',
+    timeToZinal: '4:39.40,0',
+    averageSpeed: '',
+    timeToPonchette: '1:28.27,3',
+    timeFromPonchetteToChandolin: '35.40,2',
     timeToChandolin: '',
-    timeFromChandolinToWeisshorn: '',
+    timeFromChandolinToTignousa: '32.12,5',
+    timeFromTignousaToWeisshorn: '38.30,6',
     timeToWeisshorn: '',
-    timeFromWeisshornToZinal: '',
+    timeFromWeisshornToBarneuza: '51.13,1',
+    timeFromBarneuzaToZinal: '33.36,3',
+  },
+  {
+    name: 'Augustin',
+    year: 2022,
+    category: 'Touriste',
+    timeToZinal: '4:50.01,4',
+    averageSpeed: '',
+    timeToPonchette: '1:31.28,3',
+    timeFromPonchetteToChandolin: '35.28,4',
+    timeToChandolin: '',
+    timeFromChandolinToTignousa: '35.53,3',
+    timeFromTignousaToWeisshorn: '39.44,1',
+    timeToWeisshorn: '',
+    timeFromWeisshornToBarneuza: '51.06,4',
+    timeFromBarneuzaToZinal: '36.20,9',
+  },
+  {
+    name: 'Nicolas',
+    year: 2022,
+    category: 'Touriste',
+    timeToZinal: '4:07.27,8',
+    averageSpeed: '',
+    timeToPonchette: '1:20.59,7',
+    timeFromPonchetteToChandolin: '29.36,5',
+    timeToChandolin: '',
+    timeFromChandolinToTignousa: '29.01,4',
+    timeFromTignousaToWeisshorn: '34.15,4',
+    timeToWeisshorn: '',
+    timeFromWeisshornToBarneuza: '43.44,4',
+    timeFromBarneuzaToZinal: '29.50,4',
+  },
+  {
+    name: 'Martin G.',
+    year: 2022,
+    category: 'Touriste',
+    timeToZinal: '5:37.46,5',
+    averageSpeed: '',
+    timeToPonchette: '1:49.30,2',
+    timeFromPonchetteToChandolin: '39.15,7',
+    timeToChandolin: '',
+    timeFromChandolinToTignousa: '29.01,4',
+    timeFromTignousaToWeisshorn: '46.09,6',
+    timeToWeisshorn: '',
+    timeFromWeisshornToBarneuza: '1:02.52,0',
+    timeFromBarneuzaToZinal: '40.33,8',
   },
 ];
 
+// ponchette - chandolin - tignousa - weisshorn - barneuza - zinal
+
 const sources = {
   Touriste: {
-      2003: 'https://services.datasport.com/2003/lauf/zinal/rang006.htm',
-      2004: 'https://services.datasport.com/2004/lauf/zinal/rang006.htm',
-      2005: 'https://services.datasport.com/2005/lauf/zinal/rang006.htm',
-      2007: 'https://services.datasport.com/2007/lauf/zinal/rang021.htm',
-      2008: 'https://services.datasport.com/2008/lauf/zinal/rang021.htm',
-      2013: 'https://services.datasport.com/2013/lauf/zinal/rang021.htm',
-      2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
-      2018: 'https://services.datasport.com/2018/lauf/zinal/rang021.htm',
-      2019: 'https://services.datasport.com/2019/lauf/zinal/rang021.htm',
+    2003: 'https://services.datasport.com/2003/lauf/zinal/rang006.htm',
+    2004: 'https://services.datasport.com/2004/lauf/zinal/rang006.htm',
+    2005: 'https://services.datasport.com/2005/lauf/zinal/rang006.htm',
+    2007: 'https://services.datasport.com/2007/lauf/zinal/rang021.htm',
+    2008: 'https://services.datasport.com/2008/lauf/zinal/rang021.htm',
+    2013: 'https://services.datasport.com/2013/lauf/zinal/rang021.htm',
+    2016: 'https://services.datasport.com/2016/lauf/zinal/rang021.htm',
+    2018: 'https://services.datasport.com/2018/lauf/zinal/rang021.htm',
+    2019: 'https://services.datasport.com/2019/lauf/zinal/rang021.htm',
   },
   'Touriste (St Antoine)': {
-      2021: 'https://www.datasport.com/live/ranking?racenr=23138&q=Dermine',
+    2021: 'https://www.datasport.com/live/ranking?racenr=23138&q=Dermine',
   },
   Coureur: {
-      2016: 'https://services.datasport.com/2016/lauf/zinal/rang091.htm',
-      2017: 'https://services.datasport.com/2017/lauf/zinal/rang091.htm',
+    2016: 'https://services.datasport.com/2016/lauf/zinal/rang091.htm',
+    2017: 'https://services.datasport.com/2017/lauf/zinal/rang091.htm',
   },
 };

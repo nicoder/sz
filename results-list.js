@@ -3,6 +3,7 @@ let orderBy2 = 'name';
 
 const init = () => {
   computeMissingSpeed();
+  computeMissingAidStationTimes();
   displayResults();
 };
 
@@ -13,6 +14,46 @@ const computeMissingSpeed = () => {
     }
   });
 };
+
+const computeMissingAidStationTimes = () => {
+  results.forEach(result => {
+    aidStations.forEach((aidStation, i) => {
+      const previousAidStation = aidStations[i - 1];
+      const lastSplit =
+        result['timeFrom' + previousAidStation + 'To' + aidStation];
+      if (
+        i &&
+        !result['timeTo' + aidStation] &&
+        result['timeTo' + previousAidStation] &&
+        lastSplit
+      ) {
+        result['timeTo' + aidStation] = addTimes(
+          result['timeTo' + previousAidStation],
+          lastSplit,
+        );
+      }
+    });
+  });
+};
+
+const addTimes = (t1, t2) => {
+  return formatTime(
+    convertStringHoursToDecimal(t1) + convertStringHoursToDecimal(t2),
+  );
+};
+
+const formatTime = decimalHours => {
+  const hours = Math.floor(decimalHours);
+  const deciSeconds = decimalHours * 60 * 60 * 10;
+  const minutes = Math.floor(deciSeconds / 10 / 60 - hours * 60);
+  const seconds = Math.floor(deciSeconds / 10 - hours * 60 * 60 - minutes * 60);
+  const tenthOfSecond = Math.floor(
+    deciSeconds - hours * 60 * 60 * 10 - minutes * 60 * 10 - seconds * 10,
+  );
+  return hours + ':' + pad(minutes) + '.' + pad(seconds) + ',' + tenthOfSecond;
+};
+
+const pad = number => (('' + number).length === 1 ? '0' + number : number);
 
 const displayResults = () => {
   document.querySelector('main').innerHTML = getFilters() + getResultsTable();
@@ -59,8 +100,10 @@ const getTableHeaders = () => {
   );
 };
 
-const buildTableHeader = column =>
-  `<th ${getAlign(column)}>${column.title}</th>`;
+const buildTableHeader = column => {
+  const title = column.displayHeader === false ? '' : column.title;
+  return `<th ${getAlign(column)}>${title}</th>`;
+};
 
 const getTableRows = () =>
   results
@@ -93,26 +136,64 @@ const getTableRow = result => {
   );
 };
 
+const possiblySkippedCells = [
+  //'timeFromChandolinToTignousa',
+  'timeToTignousa',
+  'timeFromTignousaToWeisshorn',
+  //'timeFromWeisshornToBarneuza',
+  'timeToBarneuza',
+  'timeFromBarneuzaToZinal',
+];
+
 const getTableCell = (column, result) => {
+  const hasChandoButNotTignousa =
+    result.timeToChandolin && !result.timeToTignousa;
+  const possiblySkippedCell = possiblySkippedCells.includes(column.key);
+  if (possiblySkippedCell && hasChandoButNotTignousa) {
+    return '';
+  }
+  let align = '';
+  let colspan = '';
+  let columnKey = column.key;
+  if (
+    hasChandoButNotTignousa &&
+    ['timeFromChandolinToTignousa', 'timeFromWeisshornToBarneuza'].includes(
+      column.key,
+    )
+  ) {
+    colspan = ' colspan="3"';
+    align = 'center';
+    if (columnKey === 'timeFromChandolinToTignousa')
+      columnKey = 'timeFromChandolinToWeisshorn';
+    else columnKey = 'timeFromWeisshornToZinal';
+  }
   return (
     '<td ' +
-    getAlign(column) +
+    getAlign(column, align) +
+    colspan +
     '>' +
-    getTableCellValue(column, result) +
+    getTableCellValue(columnKey, result) +
     '</td>'
   );
 };
 
-const getTableCellValue = (column, result) => {
+const getTableCellValue = (columnKey, result) => {
+  let value = result[columnKey];
   let prefix = '';
   let suffix = '';
-  if (column.key === 'year') {
+  if (columnKey === 'year') {
     prefix = `<a href="${
       sources[result.category][result.year]
     }" target="_blank">`;
     suffix = '</a>';
+  } else if (value && columnKey.startsWith('timeFrom')) {
+    prefix = '<&nbsp;';
+    suffix = '&nbsp;>';
   }
-  const value = result[column.key];
+
+  if (value && columnKey.startsWith('time') && !value.includes(',')) {
+    value += ',x';
+  }
   return prefix + (value || '-') + suffix;
 };
 
@@ -157,4 +238,5 @@ const convertStringSecondsToDecimal = time => {
   return seconds + parseInt(deciSeconds, 10) / 10;
 };
 
-const getAlign = column => 'align="' + (column.align || 'right') + '"';
+const getAlign = (column, align) =>
+  'align="' + (align || column.align || 'right') + '"';

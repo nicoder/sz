@@ -60,6 +60,40 @@
     17h17 ajoute les résultats de 2018
     17h48 done.
 
+20230626lun
+    07h43 ajoute les résultats de 2022, et avant si manque
+    08h08 ai récupéré les données, pour 2021 on n'a que le temps final pour martin, et en 2022 on a les temps des tronçons, pas directement ceux à chandolin/weisshorn. mais on a barneuza en plus
+    08h10 donc next ajouter les données en js, en calculant ce qui manque, et adapter le code p-e pour avoir la colonne barneuza
+
+20230709dim
+    20h45 en fait dois ajouter x colonnes : temps à tignousa, temps à barneuza, et 4 colonnes autour de ça, donc 6 colonnes ?
+    20h48 puis pensais utiliser des couleurs un peu différentes pour les temps à un certain ravitaillement et pour les temps entre ravitaillements
+    20h48 et peut-être mettre des -- .... --- autour des temps entre ravitaillements
+    20h49 et du coup pourrais utiliser des colspan quand on a moins de données
+    20h51 et du coup devrai faire un peu plus de calculs qu'avant ou c'était juste afficher la donnée ou pas
+    21h54 mis la première ligne et la première colonne en sticky, marche pas trop mal
+    21h54 et ajouté les colonnes.
+    21h54 next : afficher toutes les données d'alex 2022 (en ajoutant les calculs pour les temps qui manquent)
+    21h54 puis ajouter les autres coureurs de 2022.
+    21h55 puis adapter le code pour bien afficher ce qu'on peut dans les courses d'avant 2022
+
+0723dim
+    17h57 donc j'ai un certain nombre de ravitaillements, pour lesquels j'ai un temps ou pas, et on aimerait afficher les temps en ces lieux, et entre ces lieux
+    17h58 et si on n'a pas les temps entre deux ravitaillements, on afficherait dans un colspan plus grand l'écart qu'on a
+    18h01 pour les premières années (et le saint antoine de martin) on n'a que le temps à zinal
+    18h02 sur la dernière année on n'a que des temps entre ravitaillements (+ le temps total)
+    18h04 donc pourrais calculer les temps au ravitaillements.
+    18h04 pour les années précédentes on a moins de mesures, mais les temps entre ravitaillements et au ravitaillement
+    18h45 ok, ai les temps d'alex 2022 qui s'affichent.
+    18h46 next afficher ceux des autres participants 2022, puis voir pour afficher les splits sur colspan > 1 quand moins de données
+    19h05 ok, next affiche ,x pour les temps où on n'a pas les 10e de secondes ? pour que ce soit bien aligné quand trie
+    19h17 et pourrais ajouter dans le tri des temps comme chandolin - weisshorn et weisshorn - zinal, des temps qu'on a dans les données plus anciennes
+    20h27 ok, ai les cellules avec colspan 3. 
+    20h28 reste à pouvoir trier sur ces données qui n'a plus de colonne : chando-weisshorn et weisshorn-zinal
+    20h28 pourrais définir deux colonnes qu'on n'affiche pas.
+    20h28 et il faudrait qu'on calcule la donnée. si pas présente et qu'on a chando + les 2 splits suivants, et weisshorn + les deux splits suivants
+
+
 TODO :
 - display age
 - chacun pourrait proposer un petit récit de ses courses, si s'en souvient, et on pourrait le lire sur la page.
