@@ -481,7 +481,7 @@ const results = [
     timeToPonchette: '1:49.30,2',
     timeFromPonchetteToChandolin: '39.15,7',
     timeToChandolin: '',
-    timeFromChandolinToTignousa: '29.01,4',
+    timeFromChandolinToTignousa: '39.25,2',
     timeFromTignousaToWeisshorn: '46.09,6',
     timeToWeisshorn: '',
     timeFromWeisshornToBarneuza: '1:02.52,0',
